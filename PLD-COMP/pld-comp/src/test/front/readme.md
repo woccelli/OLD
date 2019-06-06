@@ -1,0 +1,2 @@
+Front end tests only test if the compiler is able to detect incorrect programs.
+The tests consist on .c files that the compiler will try to compile, if the compilation fails that means that our compiler detected the error so the test passes.

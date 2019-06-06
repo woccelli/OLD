@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "description": "",
+    "main": "./js/server/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "npm install && nodemon -L --watch src ./src/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.4",
+      "express": "^4.16.3",
+      "nodemon": "^1.18.3"
+    }
+  }
+  

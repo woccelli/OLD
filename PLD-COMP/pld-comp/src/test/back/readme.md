@@ -1,0 +1,1 @@
+Back_end tests consist of a .c file which will be compiled both with our compiler and with gcc. The test will compare the return value of the execution of our compilation with that of gcc.

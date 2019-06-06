@@ -1,0 +1,279 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.leaflet-container {
+  height: 400px;
+  width: 800px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  width : 70%;
+  z-index: 1;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 30%;
+  background-color: #ebebeb;
+  filter: drop-shadow(-3px 3px 4px rgba(0,0,0,0.43));
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.histogram {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  z-index: 14000;
+  bottom: 10%;
+}
+
+.slidebar {
+  color: red;
+  margin-left: 10px;
+}
+
+.MuiFab-extended{
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.MuiSlider-track {
+  background-color: red !important;
+}
+
+.MuiSlider-thumb{
+  background-color: red !important;
+}
+
+.DefaultProgressBar__vertical {
+  width: 24px;
+  height: 100%
+}
+.DefaultProgressBar_progressBar {
+  background-color: #abc4e8;
+  position: absolute
+}
+.DefaultProgressBar_progressBar__vertical {
+  height: 100%;
+  width: 24px
+}
+.DefaultProgressBar_background__vertical {
+  height: 100%;
+  top: 0px;
+  width: 15px
+}
+.DefaultProgressBar_background__horizontal {
+  height: 13px;
+  top: 0px
+}
+.DefaultHandle_handle {
+  width: 24px;
+  height: 24px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d8d8d8;
+  background-color: #fcfcfc;
+  border-radius: 20%;
+  outline: none;
+  z-index: 2;
+  box-shadow: 0 2px 2px #dbdbdb
+}
+.DefaultHandle_handle:focus {
+  box-shadow: #abc4e8 0 0 1px 1px
+}
+.DefaultHandle_handle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #dadfe8
+}
+.DefaultHandle_handle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #dadfe8
+}
+.DefaultHandle_handle__horizontal {
+  margin-left: -12px;
+  top: -5px
+}
+.DefaultHandle_handle__horizontal:before {
+  top: 7px;
+  height: 10px;
+  width: 1px;
+  left: 10px
+}
+.DefaultHandle_handle__horizontal:after {
+  top: 7px;
+  height: 10px;
+  width: 1px;
+  left: 13px
+}
+.DefaultHandle_handle__vertical {
+  margin-top: -12px;
+  left: -10px
+}
+.DefaultHandle_handle__vertical:before {
+  top: 10px
+}
+.DefaultHandle_handle__vertical:after {
+  top: 13px;
+  left: 8px;
+  height: 1px;
+  width: 10px
+}
+.DefaultHandle_handle__disabled {
+  border-color: #dbdbdb
+}
+.DefaultBackground {
+  background-color: #fcfcfc;
+  height: 15px;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  position: relative
+}
+.DefaultBackground_background__horizontal {
+  height: 15px;
+  top: -2px;
+  left: -2px;
+  bottom: 4px;
+  width: 100%
+}
+.DefaultBackground_background__vertical {
+  width: 15px;
+  top: 0px;
+  height: 100%
+}
+.rheostat {
+  position: relative;
+  overflow: visible
+}
+@media (min-width: 1128px) {
+  .autoAdjustVerticalPosition {
+    top: 12px
+  }
+}
+.rheostat__vertical {
+  height: 100%
+}
+.handleContainer {
+  height: 15px;
+  top: -2px;
+  left: -2px;
+  bottom: 4px;
+  width: 100%;
+  position: absolute
+}
+.rheostat_background {
+  background-color: #fcfcfc;
+  border: 1px solid #d8d8d8;
+  position: relative
+}
+.rheostat_background__horizontal {
+  height: 15px;
+  top: -2px;
+  left: -2px;
+  bottom: 4px;
+  width: 100%
+}
+.rheostat_background__vertical {
+  width: 15px;
+  top: 0px;
+  height: 100%
+} 
+
+.frame_btn {
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly;  /* not center */
+  align-items: center;
+}
+
+.left_velov_btn{
+  width: 40%;
+  display: block;
+}
+.left_velov_btn:before{
+  content: "";
+  display: block;
+}
+.right_velov_btn{
+  width: 40%;
+  display: block;
+}
+.left_velov_btn:before{
+  content: "";
+  display: block;
+}
+.left_velov_btn .MuiPaper-root {
+  background-color: #ff0000 !important;
+  color: #fcfcfc !important
+}
+
+.right_velov_btn .MuiPaper-root {
+  color: #ff0000 !important;
+}
